@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="Photography.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ccc;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .section h4 {
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        .photo-list {
+            flex: 1;
+        }
+
+        .photo-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .photo-list ul li {
+            margin-bottom: 15px;
+            background-color: #555;
+            height: 15px;
+            border-radius: 5px;
+        }
+
+        .photo-images {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .photo-images img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .openbtn {
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+        .openbtn:hover {
+            background-color: #444;
+        }
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+h3 {
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">Home</a>
+    <a href="FineArt.html">Fine Art</a>
+    <a href="Photography.html">Photography</a>>
+    <a href="FoodNDrinks.html">Food & Drinks</a>
+    <a href="ContactUs.html">Contact us</a>
+</div>
+<div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+    <h1>Photography</h1>
+    <div class="section">
+        <div class="photo-list">
+            <h4>Types of Photography</h4>
+            <ul>
+                <p>Sunset Photography - </P>
+                <p> Sunset photography is the art of taking photos of the setting sun provided by an image at the right -
+
+                </p>
+                <p>Serene Landscape -</p>
+                <p>Serene Landscape is simular to Nature photography however Serene focuses on evoking peace and tranqulity via calming nature scenes</p>
+                <p>Nature Photography -</p>
+                <p>Nature Photography captures the beauty of the out-doors, focusing on landscapes, wildlife, plants and natural textures.</p>
+            </ul>
+        </div>
+        <div class="photo-images">
+            <img src="https://img.sanishtech.com/u/895e77eb2b1baf5a938e483c81838176.png" alt="image_2025-12-18_220616524" alt="Macro">
+            <img src="https://img.sanishtech.com/u/736d210769d4d7123ecd583ac530eea2.png" alt="image_2025-12-18_172138143" alt="Serene">
+            <img src="https://img.sanishtech.com/u/14b9141d86af0a0fe28fb539f3c8da0b.png" alt="Nature">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+</body>
+</html>
