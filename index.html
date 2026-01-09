@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnley Community Arts Festival</title>
+    <link rel="stylesheet" href="home.CSS">
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="FineArt.html">Fine Art</a>
+    <a href="Photography.html">Photography</a>
+    <a href="FoodNDrinks.html">Food & Drinks</a>
+    <a href="ContactUs.html">Contact Us</a>
+</div>
+<div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <header class="hero">
+        <h1>Burnley Community Arts Festival</h1>
+    </header>
+    <section class="about">
+        <h2>About the Festival</h2>
+        <p>
+            The Burnley Community Arts Festival is an annual event that occurs within the town center.
+            This event will showcase artworks, pieces of photography, music and food from around the world.
+        </p>
+    </section>
+    <section class="categories">
+        <h2>What’s On</h2>
+        <div class="category-grid">
+            <div class="card">🎨 Fine Art</div>
+            <div class="card">📸 Photography</div>
+            <div class="card">🍴 Food & Drinks</div>
+        </div>
+    </section>
+    <section class="location">
+        <h2>Where to Find Us</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5605.787644282365!2d-2.243847645025117!3d53.79049549795155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1765963783678!5m2!1sen!2suk"
+            loading="lazy">
+        </iframe>
+        <p>Burnley Town Centre</p>
+    </section>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+</body>
+</html>
+
